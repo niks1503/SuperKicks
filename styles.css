@@ -1,0 +1,212 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    
+}
+
+ .top-banner{
+    width: 100vw;
+    height:50px;
+    background-image:linear-gradient(to right, rgb(4, 3, 3) 5%, red 65%, orangered 100% );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    &>p{
+       font-weight: 900;
+       font-size: large;
+       color: white;
+    }
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border: 1px solid black;
+    width: 100vw;
+
+    &>.nav-elements{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       
+
+    }
+
+    &>.search-container{
+       display: flex;
+       margin: 10px;
+
+      &> .search-bar:focus{
+        border-color: 0;
+        outline: none;
+       }
+
+    }
+
+   
+}
+
+.nav-elements{
+    list-style: none;
+    display: flex;
+    width: 50vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-container{
+    background-image: url(shoes1.jpg);
+    background-size:100vw;
+    background-position: center;
+    width:100vw;
+    height: 60vh;
+   
+    
+ 
+
+    h2, p{
+        color: white;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.449);
+        position: relative;
+        top: 100px;
+        left: 100px;
+       width: 50%;
+       height: calc(80%*60vh);
+       font-family: open-sans;
+       
+    }
+
+    h2{
+        font-size: xx-large;
+        padding:20px 20px 10px 20px;
+    }
+    p{
+        font-size: large;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        line-height: 22px;
+        font-weight: 500;
+        padding:0px 20px 20px 20px;
+    }
+}
+   
+
+    .trending-items{
+        background-color: rgb(152, 149, 149);
+        display: flex;
+        flex-direction: column;
+        margin:20px;
+        height: 230px;
+        
+       
+       
+        h2{
+            margin: 8px;
+            margin-bottom: 15px;
+            position: relative;
+            left: 10px;
+            color:rgb(34, 45, 45);
+        }
+        .jordans{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: space-around;
+
+        
+        }
+
+        .jordan{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border-top: 1px solid rgb(109, 104, 104);
+            border-left: 1px solid rgb(109, 104, 104);
+
+            h3{
+                width:15vw ;
+                color:white;
+               text-align: center;
+                background-color: rgb(109, 104, 104);
+            }
+        }
+
+        .jordan>.jordan-img{
+            width: 15vw;
+            height: 140px;
+            background-color: white;
+           }
+    }
+
+    .bottom-bg{
+        background-image: linear-gradient(to right, grey 0%, black 100%);
+        display: flex;
+        justify-content: center;
+        
+    }
+   
+    .bottom-container{
+        width: 90vw;
+        height:60vh ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 30px auto 30px auto;
+        align-items: center;
+
+      
+        background-image: linear-gradient(to right, black 5%, red 100%);
+        
+        .history{
+            color: white;
+            width: 50vw;
+
+            h2{
+                font-size: xx-large;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-size:medium;
+            }
+        
+        }
+
+
+
+        .nike-img>img{
+            height: 190px;
+            width: 180px;
+            margin: 20px 20px 20px 20px;
+            border-radius: 50%;
+            border: 1px rgb(26, 25, 25) solid;
+            background-image: linear-gradient(to bottom, black 30%, rgb(86, 82, 82));
+            box-shadow: 7px 7px 12px 1px white ;
+            
+            
+        }
+        
+        .nike-img>img:hover{
+            transform: scale(1.3) translate(-10px, 20px);
+           ;
+            
+        }
+
+    }
+
+
