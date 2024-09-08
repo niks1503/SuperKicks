@@ -48,6 +48,12 @@ body{
     &>.search-container{
        display: flex;
        margin: 10px;
+       position: relative;
+       left: -60px;
+
+       &>.search-bar{
+        width: 35vw;
+       }
 
       &> .search-bar:focus{
         border-color: 0;
